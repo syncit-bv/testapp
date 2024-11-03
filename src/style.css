@@ -1,0 +1,38 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+:root {
+  --primary-color: #3B82F6;
+}
+
+.dark {
+  color-scheme: dark;
+}
+
+.p-toast {
+  opacity: 0.95;
+}
+
+.dark .p-toast {
+  --toast-bg: #1F2937;
+  --toast-text: #F3F4F6;
+}
+
+.p-toast .p-toast-message {
+  border-radius: 0.5rem;
+}
+
+.dark .p-toast .p-toast-message {
+  background: var(--toast-bg);
+  color: var(--toast-text);
+}
+
+.p-progressspinner {
+  width: 50px;
+  height: 50px;
+}
+
+.dark .p-progressspinner circle {
+  stroke: #F3F4F6;
+}
